@@ -1,8 +1,8 @@
-<h1 class="title">{{site.timeline_title}}</h1>
+<h1 class="title">{{site.titulo_linea_tiempo}}</h1>
 <p class="subtitle">
-  For more information, have a look at my
-  <a class="highlight-link" href="{{site.cv_download_link}}" target="_blank" rel="noreferrer">
-    curriculum vitae
+  Para más información, consulta mi
+  <a class="highlight-link" href="{{site.enlace_descarga_cv}}" target="_blank" rel="noreferrer">
+    currículum vitae
   </a>.
 </p>
 
@@ -16,15 +16,15 @@
               <span class="hexagon"></span>
               <span class="flag neumorphism-button" data-aos="zoom-in-right">
                 <a href="{{event.title-url}}" target="_blank" rel="noreferrer">
-                  <span>{{event.title}}</span>
+                  <span>{{event.titulo}}</span>
                 </a>
               </span>
               <span class="time-wrapper" data-aos="zoom-in-right">
-                <span class="time neumorphism-card">{{event.date}}</span>
+                <span class="time neumorphism-card">{{event.fecha}}</span>
               </span>
             </div>
             <div class="desc neumorphism-card" data-aos="zoom-in-right">
-              {{event.subtitle}}
+              {{event.subtitulo}}
               {% if event.tags %}
                 <div class="tag-wrapper">
                   {% for tag in event.tags %}
@@ -44,15 +44,15 @@
               <span class="hexagon"></span>
               <span class="flag neumorphism-button" data-aos="zoom-in-left">
                 <a href="{{event.title-url}}" target="_blank" rel="noreferrer">
-                  <span>{{event.title}}</span>
+                  <span>{{event.titulo}}</span>
                 </a>
               </span>
               <span class="time-wrapper" data-aos="zoom-in-left">
-                <span class="time neumorphism-card">{{event.date}}</span>
+                <span class="time neumorphism-card">{{event.fecha}}</span>
               </span>
             </div>
             <div class="desc neumorphism-card" data-aos="zoom-in-left">
-              {{event.subtitle}}
+              {{event.subtitulo}}
               {% if event.tags %}
                 <div class="tag-wrapper">
                   {% for tag in event.tags %}
