@@ -1,81 +1,38 @@
-# Documentation for _data/*.yml files
+# Documentación para _config.yml
 
-## projects.yml
+## Configuración General del Sitio
 
-* `name`: Name of your project
-* `descr`: Description of your project
-* `demo`: Link to your project
-* `tags`: List of technologies you used in your projects
+* `title`: Esto se mostrará como el nombre del sitio web en la pestaña de tu navegador.
+* `description`: Este será el contenido de la etiqueta meta HTML. Esto se puede ignorar.
+* `baseurl`: La subruta de tu sitio
+  * establece esto en **""**, si renombraste el repositorio a `<user>.github.io`
 
-Example of a project:
+## Página de Inicio
 
-```yml
-- name: project X
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-  demo: https://example.com/
-  tags:
-    - tag: MongoDB
-    - tag: Express
-    - tag: AngularJS
-    - tag: Node
-```
+* `username`: Esto se mostrará en la página de inicio como tu nombre.
 
-## skills-frameworks.yml
+* `typing_text`: Este será el texto que se escribirá antes de *desplázate hacia abajo para más*.
+  * establece esto como tu título profesional, por ejemplo, **Desarrollador Fullstack**
+* `email`: Tu dirección de correo electrónico para el botón de email.
+* Botones de enlaces sociales:
+  * Para cada botón social que desees mostrar, establece tu nombre de usuario o ID de usuario
+  * Los nombres de usuario o IDs generalmente se pueden obtener de tus enlaces de perfil
+  * Si no utilizas uno de los siguientes sitios web, entonces déjalo vacío
+  * por ejemplo, dado que no blogeo en dev.to ni tengo Twitter, mis configuraciones son así:
+    * `github_username`: **longpdo**
+    * `codepen_username`: **longpdo**
+    * `dev_username`:
+    * `linkedin_username`: **longpdo**
+    * `twitter_username`:
 
-* `name`: Name of your framework
-* `weight`: Describes how good you know the framework - values from 1 up to 5
+## Sección Acerca de Mí
 
-Example of a framework:
+* `show_aboutme_card`:
+  * establecer esto en **true**, mostrará la sección Acerca de Mí
+  * establecer esto en **false**, omitirá la sección Acerca de Mí
+* `about_me_title`: Esto se mostrará como el título en la sección Acerca de Mí
+* `about_me_description`: Esto se mostrará debajo del título.
+  * Puedes añadir y estilizar enlaces de sitios web con esta plantilla HTML dentro de cada **section_description**, por ejemplo, revisa la actual `about_me_description`:
 
-```yml
-- name: Jekyll
-  weight: 3
-```
-
-## skills-languages.yml
-
-* `name`: Name of your programming language
-* `weight`: Describes how good you know the language - values from 1 up to 5
-
-Example of a language:
-
-```yml
-- name: CSS
-  weight: 3
-```
-
-## skills-tools.yml
-
-* `name`: Name of your dev tool
-* `weight`: Describes how good you know the tool - values from 1 up to 5
-
-Example of a dev tool:
-
-```yml
-- name: Git
-  weight: 3
-```
-
-## timeline.yml
-
-* `title`: Name of your timeline entry, university or work place
-* `title-url`: Link to your timeline entry, university or work place
-* `date`: Time span
-* `subtitle`: The description under the title
-* `tags`: List of tags you want to associate with the entry
-* `timeline-side`: The side on which you want to display the entry - left or right
-
-Example of a timeline entry:
-
-```yml
-- title: airbnb
-  title-url: https://example.com/
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
-  tags:
-    - tag: React
-    - tag: Javascript
-    - tag: Ruby
-    - tag: Rails
-  timeline-side: right
-```
+  ```html
+  <a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>
