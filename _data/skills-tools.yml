@@ -1,7 +1,7 @@
-# > name: Name of your Dev Tool
-# > weight: Describes how good you know the tool - values from 1 up to 5
+# > name: Nombre de tu herramienta de desarrollo
+# > weight: Describe qué tan bien conoces la herramienta - valores del 1 al 5
 #
-# Example of a Dev Tool
+# Ejemplo de una herramienta de desarrollo
 # - name: Git
 #   weight: 5
 
