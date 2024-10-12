@@ -7,10 +7,10 @@ $(document).ready(function() {
     window.scrollTo(0, 0);
   });
 
-  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+  /* particlesJS.load(@dom-id, @path-json, @callback (opcional)); */
   particlesJS.load('landing', 'assets/particles.json', function() {});
 
-  // Typing Text
+  // Texto de escritura
   var element = document.getElementById('txt-rotate');
   var toRotate = element.getAttribute('data-rotate');
   var period = element.getAttribute('data-period');
@@ -18,13 +18,13 @@ $(document).ready(function() {
     new TxtRotate(element, JSON.parse(toRotate), period);
   }, 1500);
 
-  // INJECT CSS
+  // INYECTAR CSS
   var css = document.createElement('style');
   css.type = 'text/css';
   css.innerHTML = '#txt-rotate > .wrap { border-right: 0.08em solid #666 }';
   document.body.appendChild(css);
 
-  // Initialize AOS
+  // Inicializar AOS
   AOS.init({
     disable: 'mobile',
     offset: 200,
@@ -37,7 +37,7 @@ $(document).ready(function() {
   randomizeOrder();
 });
 
-/* FUNCTIONS */
+/* FUNCIONES */
 /* Preloader */
 
 function fadeOutPreloader(element, duration) {
@@ -49,10 +49,10 @@ function fadeOutPreloader(element, duration) {
       element.style.opacity = 0;
       element.style.filter = 'alpha(opacity = 0)';
 
-      // Allow horizontal scroll
+      // Permitir desplazamiento horizontal
       document.documentElement.style.overflowY = 'auto';
 
-      // Remove preloader div
+      // Eliminar div del preloader
       document.getElementById('preloader').remove();
 
       clearInterval(interval);
@@ -64,7 +64,7 @@ function fadeOutPreloader(element, duration) {
   }, duration);
 }
 
-/* Typing Text */
+/* Texto de escritura */
 
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -108,14 +108,14 @@ TxtRotate.prototype.tick = function() {
   }, delta);
 };
 
-/* Word Cloud */
+/* Nube de palabras */
 
 function randomizeOrder() {
   var parent = document.getElementById('skills');
   var divs = parent.getElementsByTagName('div');
   var frag = document.createDocumentFragment();
 
-  // Randomize order of skills
+  // Aleatorizar el orden de las habilidades
   while (divs.length) {
     frag.appendChild(divs[Math.floor(Math.random() * divs.length)]);
   }
