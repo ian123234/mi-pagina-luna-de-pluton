@@ -19,6 +19,9 @@
 
   <script src="{{ "/assets/js/vendors.min.js" | prepend: site.baseurl }}"></script>
   <script src="{{ "/assets/js/app.min.js" | prepend: site.baseurl }}"></script>
+
+  <!-- Código de Hyvor Talk -->
+  <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
 </head>
 
 <body>
@@ -30,7 +33,9 @@
       <hr />
     </div>
   </div>
+  
   {% include landing-page.html %}
+  
   <div class="layout">
     {% if site.show_aboutme_card %}
       <section class="card neumorphism-card-big">
@@ -57,19 +62,17 @@
         {% include section-contact.html %}
       </section>
     {% endif %}
+    
+    <!-- Sección de Comentarios -->
+    <article>
+      <h3>Comentarios</h3>
+      <hyvor-talk-comments
+          website-id="12028"  <!-- Reemplaza con tu ID de sitio -->
+          page-id="{{ page.id | slugify }}"  <!-- Esto genera un ID único para la página -->
+      ></hyvor-talk-comments>
+    </article>
   </div>
+
   {% include footer.html %}
-
-  <article>
-    <h1>{{ page.title }}</h1>
-    <div>{{ page.content }}</div> <!-- Aquí va tu contenido de la publicación -->
-
-    <h3>Comentarios</h3>
-    <hyvor-talk-comments
-        website-id="12028" 
-        page-id="{{ page.id | slugify }}" 
-    ></hyvor-talk-comments>
-  </article>
-
 </body>
 </html>
