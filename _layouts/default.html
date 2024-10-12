@@ -63,12 +63,13 @@
 </html>
 
 
-<div id="hyvor-talk-view"></div>
-<script>
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://talk.hyvor.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
+<article>
+  <!-- Aquí va tu contenido de la publicación -->
+
+  <h3>Comentarios</h3>
+  <hyvor-talk-comments
+      website-id="12028" <!-- Reemplaza con tu ID de sitio -->
+      page-id="{{ page.id | slugify }}" <!-- Esto genera un ID único para la página -->
+  ></hyvor-talk-comments>
+</article>
+
