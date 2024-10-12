@@ -22,6 +22,17 @@
 
   <!-- Código de Hyvor Talk -->
   <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+
+  <style>
+    /* Estilo para centrar la imagen */
+    .centered-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%; /* Hace que la imagen sea responsiva */
+      height: auto; /* Mantiene la proporción de la imagen */
+    }
+  </style>
 </head>
 
 <body>
@@ -36,8 +47,8 @@
   
   {% include landing-page.html %}
 
-  <!-- Agregar imagen aquí -->
-  <img src="{{ "/img/francella.png" | prepend: site.baseurl }}" alt="Descripción de la imagen" />
+  <!-- Agregar imagen centrada aquí -->
+  <img class="centered-image" src="{{ "/img/francella.png" | prepend: site.baseurl }}" alt="Descripción de la imagen" />
 
   <div class="layout">
     {% if site.show_aboutme_card %}
