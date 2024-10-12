@@ -1,12 +1,12 @@
 {% if site.show_projects %}
-  <h1 class="title"><span>{{site.projects_title}}</span></h1>
+  <h1 class="title"><span>{{site.titulo_proyectos}}</span></h1>
   <div class="projects-wrapper">
     {% for project in site.data.projects %}
       <div class="project neumorphism-card" data-aos="zoom-in-down">
         <div class="name-link-wrapper">
-          <h3>{{project.name}}</h3>
+          <h3>{{project.nombre}}</h3>
         </div>
-        <p class="project-desc">{{project.descr}}</p>
+        <p class="project-desc">{{project.descripcion}}</p>
         {% if project.demo %}
           <a class="highlight-link" href="{{project.demo}}" target="_blank" rel="noreferrer">
             Demo
@@ -25,7 +25,7 @@
 {% endif %}
 
 {% if site.show_os_projects %}
-  <h1 class="title">{{site.os_projects_title}}</h1>
+  <h1 class="title">{{site.titulo_os_proyectos}}</h1>
   {% if site.projects.sort_by == 'stars' %}
     {% assign sort_order = 'stargazers_count', 'last' %}
   {% else %}
@@ -56,8 +56,8 @@
                     </path>
                   </svg>{{ repository.stargazers_count }}
                 </a>
-                {% endif %}
-                {% if repository.forks_count != 0 %}
+              {% endif %}
+              {% if repository.forks_count != 0 %}
                 <a href="{{ repository.html_url }}/network/members" class="project-stars-forks">
                   <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -75,7 +75,7 @@
             </a>
           {% endif %}
           <a class="highlight-link" href="{{repository.html_url}}" target="_blank" rel="noreferrer">
-            Github
+            GitHub
           </a>
           {% if repository.topics %}
             <div class="tag-wrapper">
@@ -89,5 +89,3 @@
     {% endfor %}
   </div>
 {% endif %}
-
-
