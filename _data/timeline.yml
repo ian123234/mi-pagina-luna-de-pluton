@@ -1,61 +1,61 @@
-# > title: Name of your timeline entry, university or work place
-# > title-url: Link to your timeline entry, university or work place
-# > date: Time span
-# > subtitle: The description under the title
-# > tags: List of tags you want to associate with the entry
-# > timeline-side: The side on which you want to display the entry: left or right
+# > title: Nombre de la entrada de tu línea de tiempo, universidad o lugar de trabajo
+# > title-url: Enlace a la entrada de tu línea de tiempo, universidad o lugar de trabajo
+# > date: Período de tiempo
+# > subtitle: La descripción debajo del título
+# > tags: Lista de etiquetas que quieras asociar con la entrada
+# > timeline-side: El lado en el que quieres mostrar la entrada: izquierda o derecha
 
-# Example of a timeline entry
+# Ejemplo de una entrada de la línea de tiempo
 # - title: airbnb
 #   title-url: https://example.com/
-#   date: Sep 2019 - Present
-#   subtitle: Fullstack Developer
+#   date: Sep 2019 - Presente
+#   subtitle: Desarrollador Fullstack
 #   tags:
 #     - tag: React
 #     - tag: Javascript
 #     - tag: Ruby
 #     - tag: Rails
-#   timeline-side: right
+#   timeline-side: derecha
 
 - title: airbnb
   title-url: https://example.com/
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
+  date: Sep 2019 - Presente
+  subtitle: Desarrollador Fullstack
   tags:
     - tag: React
     - tag: Javascript
     - tag: Ruby
     - tag: Rails
-  timeline-side: right
+  timeline-side: derecha
 
 - title: Google
   title-url: https://example.com/
   date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
+  subtitle: Ingeniero de Software como Interno
   tags:
     - tag: Flutter
     - tag: Dart
     - tag: Keycloak
-  timeline-side: right
+  timeline-side: derecha
 
-- title: Super University
+- title: Universidad Super
   title-url: https://example.com/
   date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
-  timeline-side: left
+  subtitle: M.Sc. en Ciencias de la Computación
+  timeline-side: izquierda
 
 - title: Facebook
   title-url: https://example.com/
   date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
+  subtitle: Desarrollador Front-End como Interno
   tags:
     - tag: React
     - tag: Node
     - tag: Javascript
-  timeline-side: right
+  timeline-side: derecha
 
-- title: Super University
+- title: Universidad Super
   title-url: https://example.com/
   date: 2014 - 2017
-  subtitle: B.A. Computer Science
-  timeline-side: left
+  subtitle: B.A. en Ciencias de la Computación
+  timeline-side: izquierda
