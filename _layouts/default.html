@@ -53,23 +53,23 @@
       </section>
     {% endif %}
     {% if site.show_contact_card %}
-    <section class="card neumorphism-card-big">
-      {% include section-contact.html %}
-    </section>
+      <section class="card neumorphism-card-big">
+        {% include section-contact.html %}
+      </section>
     {% endif %}
   </div>
   {% include footer.html %}
+
+  <article>
+    <h1>{{ page.title }}</h1>
+    <div>{{ page.content }}</div> <!-- Aquí va tu contenido de la publicación -->
+
+    <h3>Comentarios</h3>
+    <hyvor-talk-comments
+        website-id="12028" 
+        page-id="{{ page.id | slugify }}" 
+    ></hyvor-talk-comments>
+  </article>
+
 </body>
 </html>
-
-
-<article>
-  <!-- Aquí va tu contenido de la publicación -->
-
-  <h3>Comentarios</h3>
-  <hyvor-talk-comments
-      website-id="12028" <!-- Reemplaza con tu ID de sitio -->
-      page-id="{{ page.id | slugify }}" <!-- Esto genera un ID único para la página -->
-  ></hyvor-talk-comments>
-</article>
-
