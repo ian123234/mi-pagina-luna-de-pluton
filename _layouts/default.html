@@ -61,3 +61,14 @@
   {% include footer.html %}
 </body>
 </html>
+
+
+<div id="hyvor-talk-view"></div>
+<script>
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://talk.hyvor.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
